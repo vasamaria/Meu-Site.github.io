@@ -1,0 +1,54 @@
+body{
+background: #54188b;
+background-size: cover;
+background-repeat: no-repeat;
+
+
+}
+
+.CALENDÁRIO{
+    margin: auto;
+    max-width: 800px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+
+}
+.month{
+    text-align: center;
+    background: white;
+    font-size: 60px;
+    letter-spacing: 1px;
+    color: black;
+    border: 2px solid  rgb(29, 12, 102);
+}
+
+table, th, td{
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    font-size: 25px;
+    border-collapse: collapse;
+    border: 2px solid black;
+    font-family: elaphant;
+}
+
+
+tr,th,td{
+    padding: 15px;
+}
+
+th{
+    background: #009900;
+    color: white;
+    font-family: arial black;
+
+}
+td{
+    background: #00264d;
+    color: yellow;
+}
+
+td:hover{
+    background: green;
+}

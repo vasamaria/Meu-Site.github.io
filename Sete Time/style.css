@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 1px;
+}
+
+
+
+@font-face{
+    font-family: 'MADE Tommy';
+    src: url('fonts/MADE\ Tommy.otf.otf') format('opentype');
+    font-weight:normal;
+}
+
+/* Variaveis padrões */
+:root{
+    --font-destaque: 'MADE Tommy';
+    --font-padrao: 'Barlow Condensed', sans-serif;
+
+    --cor1: #4E4E4E;
+    --cor2: #00d67d;
+    --cor3: #459AFE;
+}
+
+
+
+body{
+    background: #54188b;
+    min-height:90vh;
+    list-style: none;
+    font-family: var(font-padrao);
+}
+ 
+/* INICIO BARRA TOP*/
+
+.barra-top{ 
+    background-image:linear-gradient(to bottom, #d6c100, #cfbb03);
+    color: black;
+    display: flex;
+    justify-content:space-around;
+    
+    
+}
+
+.email-whats{
+    display: flex;
+    padding: 5px;
+    
+    
+}
+
+#email{
+    display: flex;
+    margin-right: 20px;
+}
+
+.img-email{
+    width: 24px;
+    height: 24px;  
+    padding: 2px 2px 0px 2px
+    
+}
+
+#email p{
+    font-weight: normal;
+    margin: 2px 10px 0px 10px;
+}
+
+#email a{
+    text-decoration: none;
+    color: black;
+}
+
+#email a:hover{
+    text-decoration: underline;
+}
+
+button#button-email{
+    width: 28px;
+    height: 28px;
+    border-radius: 12px;
+    border: none;
+}
+
+button#button-email:hover{
+    background-color:rgb(160, 159, 159)
+}
+
+#whats{
+    display: flex;
+}
+
+.img-whats{
+    width: 24px;
+    height: 24px;  
+    padding: 2px 2px 0px 2px
+
+}
+
+#whats p{
+    font-weight: normal;
+    margin: 4px 10px 0px 10px;
+}
+
+button#button-whats{
+    width: 28px;
+    height: 28px;
+    border-radius: 12px;
+    border: none;
+}
+
+button#button-whats:hover{
+    background-color: #34af23;
+}
+
+.redes-top{
+    padding: 5px;
+}
+
+.redes-top button{
+    width: 28px;
+    height: 28px;
+    border-radius: 12px;
+    border: none;
+    
+}
+
+
+
+a > img{
+    width: 24px;
+    height: 24px;  
+    padding: 2px 2px 0px 2px
+}
+
+#button-insta:hover{
+    background-image:linear-gradient(to top,#8a3ab9fb ,#bc2a8d);
+}
+
+#button-face:hover{
+    background-color: #4170cc;
+}
+
+#button-you:hover{
+    background-color:#ee4040;
+}
+
+/* FIM BARRA TOP */
+
+
+/* INICIO CABEÇÁRIO*/
+
+
+header{
+    background-color: rgb(177, 65, 143);
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
+}
+
+header img{
+    width: 35px;
+    height: 35px;
+    border-radius: 40px;
+}
+
+
+
+.menu{
+    display: flex;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+
+ul li{
+    list-style: none;
+    margin-right: 15px;
+    margin-top: 20px;
+    font-family: Arial;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: rgb(17, 9, 134);
+}
+
+ul li:hover{
+    background-color: var(--cor2);
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+/*FIM DO CABEÇÁRIO */
+
+/*INICIO DE IMAGEM COM TEXTO CABEÇÁRIO 2*/
+
+.imagem-texto{
+    width: 100%;
+    background-image:url(imagens/templates/imagem1.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.bg{
+    height: 300px;/*você não tinha estabelecido heigth, por isso não estava aparecendo a imagem*/
+    padding: 10%;/*10% de espaço em todos os lados idependente do tamanho da tela*/
+    display: flex;/*torna s elementos flexíveis*/
+    justify-content: center;/*alinha ao centro*/
+    align-items: center;/*alinha ao centro*/
+    flex-direction: column;/*faz co que os itens fiquem em coluna*/
+    gap: 40px;/*da um espaço entre os elementos*/
+    background-color: rgba(0, 0, 0, 0.7);/*adicionou cor acima da imagem e antes dos textos, assim os textos ficaram mais legíveis*/
+}
+.imagem-texto h1{
+    /* background-color: rgba(0, 0, 0, 0.247); */
+    display: inline-block;
+    font-family: var(--padrao);
+    font-size: 40px;/*os títulos h1 podem ser bem grandes mesmo, eles tem que ser algo que chame a atenção*/
+    color: #fff;/* o branco trouxe mais contraste e ficou mais fácil de ler*/
+}
+
+.imagem-texto p{
+    width: 90%;
+    max-width: 600px;
+    display: inline-block;
+    font-family: var(--padrao);
+    text-align: center;
+    font-size: 25px;
+    color: #00d67d;
+}
+
+/*FIM DE IMAGEM COM TEXTO CABEÇÁRIO 2*/
+
+h1{
+
+    color: #402669;
+    background:rgba(255, 255, 255, 0.5);
+}
+
+h2{
+    color: #330779;
+    background:rgba(255, 255, 255, 0.5);
+}
+
+
+
+.section{
+    margin: 0px;
+    padding:0px;
+}
+
+a{
+    color: #34af23;
+}
+
+.container{
+    background: #75cac68f;
+    height:60vh;
+    text-align: center;
+    position: relative;
+}
+img{
+    width:400px ;
+    padding:0px ;
+    height:40vh;
+    
+}
+
+.clock {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 0px solid #99CCFF;
+    border-radius: 10%;
+    color: #402669;
+    display: flex;
+    font-size: 200px;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+    min-height: 40vh;
+    width: 100%;
+  }
+
+  blockquote{
+    background:#00d67d;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    font-size: 50px;
+    justify-content: center;
+    
+    
+
+  }
+
+  Dias-Horários{
+    background:#00d67d;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    font-size: 30px;
+    justify-content: center; 
+      
+    
+
+    }
+
+    .provincia-dias{
+        background-color: rgba(255, 255, 255, 0.5);
+        margin: 5px;
+        padding: 2px;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    
+
+
+    }
+
+    option{
+        background: #402669;
+        color: #34af23;
+        padding: 0px;
+        margin-top: 0px;
+    }
+   
+    
+    video{
+        background: black;
+        align-content: center;
+        width: 200px;
+        height: 30vh
+        
+    }
+    
+
+    audio{
+        background: #459AFE;
+    }
+
+footer{
+height: 20vh;
+ margin:0;
+ padding: 0px;
+ color: #793a07;
+ text-align:center;
+
+}
+
+@media screen and (max-width:768px){
+                      section,aside,blockquoute{
+                        width: 100%;
+                     padding: 0;   
+
+    }
+}
+
+@media screen and (max-width:600px){
+    nav li h1 {
+        float: none;
+        text-align: center;
+      width: 100%;
+  
+
+
+}
+}
+
+body {
+    font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+    background: #3AAFAB;
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .container * {
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .flex-outer,
+  .flex-inner {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .flex-outer {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .flex-outer li,
+  .flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .flex-inner {
+    padding: 08px;
+    justify-content: space-between;  
+  }
+  
+  .flex-outer > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .flex-outer li label,
+  .flex-outer li p {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+  
+  .flex-outer > li > label,
+  .flex-outer li p {
+    flex: 1 0 120px;
+    max-width: 220px;
+  }
+  
+  .flex-outer > li > label + *,
+  .flex-inner {
+    flex: 1 0 220px;
+  }
+  
+  .flex-outer li p {
+    margin: 0;
+  }
+  
+  .flex-outer li input:not([type='checkbox']),
+  .flex-outer li textarea {
+    padding: 15px;
+    border: none;
+  }
+  
+  .flex-outer li button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: #333;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+  }
+  
+  .flex-inner li {
+    width: 100px;
+  }
+
+
+  
